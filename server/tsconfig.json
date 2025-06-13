@@ -2,9 +2,12 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "outDir": "dist",                       // ✅ Agrega esta línea
-    "rootDir": "src",                       // ✅ Agrega esta línea
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,                         // ✅ NECESARIO con `allowImportingTsExtensions`
+
+    "outDir": "dist",
+    "rootDir": "src",
 
     "skipLibCheck": true,
     "allowJs": true,
@@ -20,7 +23,7 @@
     "noImplicitReturns": true,
     "noImplicitOverride": true,
     "useUnknownInCatchVariables": true,
-    "resolveJsonModule": true              // ✅ Esto también si usas archivos .json
+    "resolveJsonModule": true
   },
   "include": ["src"]
 }

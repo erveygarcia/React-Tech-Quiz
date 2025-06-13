@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon dist/server.js"
+    "start": "ts-node-esm src/server.ts",
+    "dev": "nodemon dist/server.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -12,6 +13,7 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.0",
-    "typescript": "^5.2.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }

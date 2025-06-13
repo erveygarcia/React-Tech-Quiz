@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import questionRoutes from './routes/api/questionRoutes.js';
+import questionRoutes from './routes/api/questionRoutes.ts';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
