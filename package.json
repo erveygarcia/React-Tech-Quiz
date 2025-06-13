@@ -1,0 +1,17 @@
+{
+  "name": "mern-quiz-app",
+  "version": "1.0.0",
+  "description": "MERN Tech Quiz App",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "test": "npx cypress open",
+    "clean": "rm -rf server/dist",
+    "start": "npm run start --prefix server"
+  },
+  "devDependencies": {
+    "cypress": "^14.4.1",
+    "concurrently": "^8.2.0"
+  }
+}
